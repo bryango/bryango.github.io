@@ -18,28 +18,29 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : # does not include hostname
-title   : Your Site Title
+# url     : # the base hostname & protocol for your site e.g. https://www.someone.com
+baseurl : / # does not include hostname
+title   : Bryan's blog / 博客
 description: > # this means to ignore newlines until "Language & timezone"
-  Your Site Description
+  Bryan's Blog / 学习一个
 
 
 ## => Language and Timezone
 ##############################
-lang: # the language of your site, default as "en"
-timezone: # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+lang: zh                 # the language of your site, default as "en"
+timezone: Asia/Shanghai  # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
 
 
 ## => Author and Social
 ##############################
 author:
   type      : # "person" (default), "organization"
-  name      : Your Name
-  url       :
-  avatar    : # path or url of avatar image (square)
-  bio       : I am an amazing person.
-  email     :
+  name      : Bryan
+  url       : https://bryango.github.io/
+  avatar    : https://avatars3.githubusercontent.com/u/26322692 # path or url of avatar image (square)
+  bio       : 细思物理须行乐
+  email     : bryanlais@gmail.com
+  github    : bryango # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
   twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
   weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
@@ -49,13 +50,12 @@ author:
   zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
   douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
   linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : # "user_name" the last part of your profile url, e.g. https://github.com/user_name
   npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: user_name/repo_name
+repository: bryango/bryango.github.io
 repository_tree: master
 
 
@@ -70,11 +70,11 @@ paths:
 
 ## => Post
 ##############################
-## excerpt
-excerpt_separator: <!--more-->
+## excerpt: see defaults > values > articles for `excerpt_type`
+excerpt_separator: <!-- more -->
 
 ## license
-license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+license: CC-BY-NC-SA-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0", "CC-BY-NC-SA-4.0"
 
 ## TOC
 toc:
@@ -84,7 +84,7 @@ toc:
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: # false (default), true
+mathjax: true # false (default), true
 mathjax_autoNumber: # false (default), true
 
 ## Mermaid
@@ -118,7 +118,7 @@ sharing:
 ## => Comments
 ##############################
 comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
+  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
 
   ## Disqus
   disqus:
@@ -127,12 +127,12 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
+    clientID    : f3ec763d5d7400b6fdc6                      # GitHub Application Client ID
+    clientSecret: d1240bb3b9f2a4506f967a8e1494fc657cd207c0  # GitHub Application Client Secret
+    repository  : bryango.github.io
+    owner       : bryango
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+      - bryango
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
@@ -214,6 +214,11 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+  - scope:
+      path: ""
+    values:
+      articles:
+        excerpt_type: html # text | html
 
 
 ## => Plugins
