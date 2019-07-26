@@ -7,11 +7,15 @@
 
 <script type="text/x-mathjax-config">
 	var _config = { tex2jax: {
-		inlineMath: [['$','$'], ['\\(','\\)']]
+		inlineMath: [['$','$']]
 	}};
+    var _extent = { pkg: ["autoload-all.js","[Contrib]/physics/physics.js","[Contrib]/siunitx/siunitx.js"] };
+    _config.TeX = { extensions: _extent.pkg };
 	{%- if _mathjax_autoNumber == true -%}
-		_config.TeX = { equationNumbers: { autoNumber: "all" } };
+		_config.TeX = { extensions: _extent.pkg,
+            equationNumbers: { autoNumber: "all" } };
 	{%- endif -%}
+    // MathJax.Ajax.config.path["Contrib"] = "//cdn.mathjax.org/mathjax/contrib";
 	MathJax.Hub.Config(_config);
 </script>
 <script type="text/javascript" src="{{ _sources.mathjax }}" async></script>

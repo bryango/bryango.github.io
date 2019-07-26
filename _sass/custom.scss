@@ -1,3 +1,69 @@
 /* start custom scss snippet */
 
+//
+// _sass/common/components/_item.scss
+//
+
+h2.item__header {
+  font-size: map-get($base, font-size-h2) * .85;
+}
+
+.item__description {
+  &, .article__content {
+    font-size: map-get($base, font-size-sm) * 1.05;
+    line-height: map-get($base, line-height) * 1.15;
+    blockquote {
+      margin: map-get($base, vertical-space) * 1.6 0;
+    }
+  }
+}
+
+//
+// _sass/layout/_404.scss
+//
+
+.layout--404 {
+  .sign {
+    text-align: center;
+    h1 {
+      font-size: map-get($base, font-size-xl) * 4.8;
+    }
+    p {
+      margin-top: map-get($base, vertical-space) * 1.2;
+      margin-bottom: map-get($base, vertical-space) * 1.6;
+      font-size: map-get($base, font-size) * 1.2;
+      font-style: italic;
+    }
+  }
+}
+
+//
+// _sass/layout/_article.scss
+//
+
+.layout--article {
+  .article__footer {
+    margin-top: map-get($base, vertical-space-lg) * 1.5;
+    font-size: map-get($base, font-size) * 1.05;
+    text-align: center;
+    .article__license {
+      img {
+        height: map-get($base, font-size) * 3.6;
+        margin-top: map-get($base, vertical-space-lg) * .5;
+      }
+    }
+  }
+}
+
+//
+// _sass/components/_footer.scss
+//
+
+.footer__author-links {
+  .author-links {
+    padding-top: 1rem;
+  }
+}
+
+
 /* end custom scss snippet */

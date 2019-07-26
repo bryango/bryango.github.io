@@ -93,7 +93,7 @@ a > .item__header, a.item__header, .item__header > a {
     }
     &:not(:last-child) {
       padding-bottom: map-get($spacers, 4);
-      @include split-line(bottom);
+      // @include split-line(bottom);
     }
     list-style-type: none;
   }
