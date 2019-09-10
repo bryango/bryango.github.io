@@ -26,11 +26,11 @@ titles:
 key: page-about
 ---
 
-<div style="float: right; margin: 24px; margin-top: 0px;">
+<div style="float: right; margin: 16px; margin-top: 0px;">
   <img src="/assets/figs/icebear_calculus.jpg" alt="Bryan" width="200px" />
 </div>
 
-本科毕业，博士在读，系燕园解放组织下属中央情报机构的重要成员；热爱物理，关注科技，支持开源；沉迷于电影、英美剧、YouTube, 亦热爱摄影、古典音乐等，然不学无术，无一精通。
+本科毕业，博士在读，系淹园解放组织驻外情报机关的重要成员。热爱物理，关注科技，支持开源；沉迷于电影、英美剧、YouTube，亦热爱摄影、古典音乐等，然不学无术，无一精通。
 
 > <big>[_For brief CV, click here!_](/assets/docs/CV.pdf)</big>
 >
