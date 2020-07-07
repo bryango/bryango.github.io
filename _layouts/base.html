@@ -16,6 +16,10 @@ layout: none
   </head>
   <body>
     <div class="root" data-is-touch="false">
+      <div class="mathjax_macros" style="display: none;">
+        ${% include usermod/macros.tex %}$
+        ${% include usermod/mathjax.tex %}$
+      </div>
       {{ content }}
     </div>
     <script>

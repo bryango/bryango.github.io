@@ -2,7 +2,7 @@
 # Update extra resources
 
 # LaTeX
-LATEX_MACROS_UPSTREAM=../Base/Templates/LaTeX/basics
+LATEX_MACROS_UPSTREAM=~/Templates/Science/LaTeX/basics
 LATEX_MACROS_LOCAL=./_includes/usermod
 for tex_file in "$LATEX_MACROS_UPSTREAM"/*.tex; do
     local_file="$LATEX_MACROS_LOCAL"/"$(basename "$tex_file")"

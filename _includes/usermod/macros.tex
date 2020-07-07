@@ -18,15 +18,38 @@
 \newcommand{\rvec}[1]{\overrightarrow{#1}}
 \newcommand{\lvec}[1]{\overleftarrow{#1}}
 \newcommand{\sidenote}[1]{\textcolor{purple}{#1}}
+\newcommand{\mquote}[1]{\text{``$#1$''}}
+\newcommand{\thinmspace}{\mspace{\thinmuskip}}
+\newcommand{\moppower}[2]{\mop{ {#1}^{#2} }\!}
+%
+% Physics
+\newcommand{\DD}{\mscr{D}}
+\newcommand{\normorder}[1]{
+	\mspace{.2\thinmuskip}%
+	{\mathopen {:}}%
+	{\thinmspace #1\thinmspace}%
+	{\mathclose {:}}%
+	\mspace{.5\thinmuskip}%
+}
 %
 % Differential Geometry
 \newcommand{\hodgedual}{\mop{\star}}
 \newcommand{\cdd}{\mop{D}\!}
 \newcommand{\pdd}[1]{\partial_{#1}}
 \newcommand{\cdv}[1]{\mop{\nabla_{\!\mathnormal{#1}\!}}}
-\newcommand{\ldv}[1]{\mop{\mcal{L}_{\!\mathnormal{#1}\!}}}
+\newcommand{\ldv}[1]{\mop{\mcal{L}_{\mathnormal{#1}\!}}}
 \newcommand{\ric}[1]{\mop{Ric}\pqty{#1}}
 \newcommand{\ad}{\mop{ad}}
+\newcommand{\pd}{\partial}
+\newcommand{\pdbar}{\bar{\partial}}
 %
 % Algebra
 \newcommand{\subsetnormal}{\mathrel{\triangleleft}}
+%
+% QED
+\newcommand{\qed}[1][]{\hfill\ensuremath{ %
+    \square\mathrlap{_{\,#1}}%
+}}
+\newcommand{\qedfull}[1][]{\hfill\ensuremath{ %
+    \blacksquare\mathrlap{_{\,#1}}%
+}}
