@@ -21,6 +21,7 @@ mathjax_autoNumber: true
 
 - 在 **域名（domain）** 一栏填入：**`tsinghua.edu.cn`**
 - 在 **CA 证书（CA certificate）** 一栏选择：**使用系统证书**
+- 其余配置与[官方指南](https://its.tsinghua.edu.cn/info/czsc/1893)一致
 
 <img
   src="/assets/figs/tsinghua-secure-setting.png"
