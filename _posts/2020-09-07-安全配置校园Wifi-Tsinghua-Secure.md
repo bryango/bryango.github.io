@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "安全配置校园 Wifi — Tsinghua-Secure / PKU Secure"
+title: "Tsinghua-Secure / PKU Secure 证书配置"
 key: 20200907
 tags:
     - Tutorial / 搞机心得
